@@ -1,0 +1,259 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Arvo|Muli|Raleway:300,400|Josefin-Sans|Josefin+Slab:300,400,600);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-------------------------Begin Custom Code Here --------------------*/
+
+html {
+	background: url('images/05-white-brick.png') repeat;
+	height: 100%;
+}
+body {
+	font-family: Raleway, sans-serif;
+	font-weight: 300;
+	box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+.header {
+  position: absolute;
+  height: 100%;
+  width: 200px;
+  box-sizing: border-box;
+  }
+
+
+#nav {
+  position: fixed;
+  top: 0;
+  padding: 30px 20px;
+  width:200px;
+   }
+
+.nav ul {
+  padding: 0;
+  margin: 0 35px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.nav li {
+  position: relative;
+  text-align: center;
+  border-top: 1px solid #ddd8c0;
+}
+.nav li a {
+  display: block;
+  font-weight: bold;
+  color: #412b1d;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  border-top: 1px solid #f0ede1;
+}
+.nav li:last-child {
+  border-bottom: 1px solid #f0ede1;
+}
+.nav li:last-child a {
+  border-bottom: 1px solid #ddd8c0;
+}
+.nav li:hover {
+  background: #412b1d;
+}
+.nav li:hover a {
+  color: #e9e6d5;
+  text-shadow: none;
+}
+
+.logo {
+	display: block;
+	width:120px;
+	height: auto;
+	margin: 0 auto 30px;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+}
+
+.nav h1 {
+	font-family: "Josefin Slab", sans-serif;
+	text-align: center;
+	font-size: 38px;
+	padding-bottom: 20px;
+}
+
+.nav h2 {
+	font-family: "Josefin Slab", sans-serif;
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 20px;
+	color: #E33258;
+	font-weight: 600;
+}
+.main {
+	position: relative;
+	width: 65%;
+	min-width: 568px;
+	float: right;
+	background-color: #F5F2EF;
+	padding: 40px;
+	box-sizing: border-box;
+	margin-right: 100px;
+}
+
+.main h1 {
+	font-size: 44px;
+	line-height: 60px;
+	text-align: center;
+	margin: 20px;
+	padding: 10px 20px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-family: "Josefin Slab", serif;
+
+}
+
+
+p {
+	margin: 20px;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+#home img {
+	float: right;
+	width: 200px;
+	height: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+
+.intro {
+	width: 80%;
+	line-height: 30px;
+	padding: 20px 0;
+	font-size: 20px;
+	background:rgba(255, 255, 255, .9);
+	margin: 10px auto 1em auto;
+}
+
+.intro ul li {
+  display:inline-block;
+  font-size: 1.5em;
+  margin:0 .75rem;
+}
+
+.intro ul {
+	text-align: center;
+	color: #FF4500;
+	vertical-align: baseline;
+}
+#entry {
+ height: 40px;
+ width: 70px;
+ padding: 0 5px;
+ font-size: .5em;
+ font-family: Raleway;
+ text-transform: none;
+ text-align: center;
+ font-weight: 300;
+}
+#button {
+	display: none;
+}
+
+.results-container {
+	font-family: Raleway, sans-serif;
+	background:rgba(255, 255, 255, .9);
+	width: 80%;
+	height: 400px;
+	margin: auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.results-container .header {
+	background-color: #FF4500;
+	color: white;
+	width: 94%;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 20px 0px 20px 0px;
+	margin: auto;
+		}
+
+.results-container .results {
+	padding: 20px;
+	margin: 0 auto 1em auto;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+
+
+.error {
+	background-color: #F78181;
+	padding: 1em;
+}
