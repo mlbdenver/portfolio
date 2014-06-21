@@ -53,34 +53,47 @@ table {
 html {
 	background: url('images/05-white-brick.png') repeat;
 	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
 }
+
 body {
 	font-family: Raleway, sans-serif;
 	font-weight: 300;
-	box-sizing: border-box;
+	margin: 0;
+	width: 100%;
+	min-height: 100%;
+	min-width: 960px;
 }
 
-.container {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  box-sizing: border-box;
+p {
+	margin: 20px;
+	font-size: 20px;
+	line-height: 30px;
 }
+
+#left {
+	position: fixed;
+	top: 0;
+	width: 240px;
+	height: 100%;
+}
+
 .header {
+  z-index: 30;
   position: absolute;
   height: 100%;
-  width: 200px;
-  box-sizing: border-box;
-  }
+  width: 220px;
+  padding: 10px;
+ }
 
 
-#nav {
+/*#nav {
   position: fixed;
   top: 0;
   padding: 30px 20px;
   width:200px;
-   }
+   } */
 
 .nav ul {
   padding: 0;
@@ -141,18 +154,26 @@ body {
 	color: #E33258;
 	font-weight: 600;
 }
-.main {
+#main {
 	position: relative;
-	width: 65%;
-	min-width: 568px;
-	float: right;
+	width: 784px;
+	min-height: 100%;
+	margin-left: 240px;
+	z-index: 10;
+	/*float: right;*/
 	background-color: #F5F2EF;
 	padding: 40px;
-	box-sizing: border-box;
 	margin-right: 100px;
 }
 
-.main h1 {
+#right {
+	position: fixed:
+	top:0;
+	left: 1024px;
+	min-height: 100%;
+}
+
+#main h1 {
 	font-size: 44px;
 	line-height: 60px;
 	text-align: center;
@@ -164,12 +185,47 @@ body {
 
 }
 
-
-p {
+#main h2 {
+	font-size: 36px;
+	text-align: center;
 	margin: 20px;
-	font-size: 20px;
-	line-height: 30px;
+	padding: 10px 20px;
+	font-family: "Josefin Slab", serif;
+	color: #E33258;
+	font-weight: 600;
 }
+
+#main h3 {
+	font-size: 32px;
+	text-align: left;
+	padding: 20px 0;
+	font-family: "Josefin Slab", serif;
+	color: #E33258;
+	font-weight: 600;
+}
+
+#main p {
+	font-size: 28px;
+	text-align: left;
+	margin: 0px;
+	padding: 10px 0;
+	font-family: "Josefin Slab", serif;
+	color: black;
+	}
+
+#main a {
+	color: #e33258;
+}
+
+#main a:link {
+	text-decoration: none;
+}
+
+#main a:hover {
+	text-decoration: underline;
+}
+
+
 
 #home img {
 	float: right;
@@ -189,8 +245,13 @@ p {
 	float: left;
 }
 
+.sample img{
+	width: 600px;
+	height: 420px;
 
-.intro {
+}
+
+/*.intro {
 	width: 80%;
 	line-height: 30px;
 	padding: 20px 0;
@@ -256,4 +317,4 @@ p {
 .error {
 	background-color: #F78181;
 	padding: 1em;
-}
+} */
