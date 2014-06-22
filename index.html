@@ -5,7 +5,8 @@
 	<title>Monica's Portfolio Site</title>
 	<link rel="stylesheet" href="main.css">
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="app.js"></script>
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.1/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.1/fotorama.js"></script> <!-- 16 KB -->
 </head>
 <body>
 	<div id="left">
@@ -39,52 +40,78 @@
 		<section class="section" id="about">
 			<h1>About</h1>
 			<p>Outside of this all-consuming hobby, I'm a corporate development and investor relations specialist, currently working in the mining industry</p>
-			<p>I earned my MBA at the University of Chicago, and I am a Chartered Financial Analyst. If you can't tell from my portfolio, I love dogs. And ice cream.</p>
-			<p>I also love running and hiking</p>
+			<p>My undergraduate degree was in Chemical Engineering. I earned my MBA at the University of Chicago, and I am a Chartered Financial Analyst. If you can't tell from my portfolio, I love dogs. And ice cream.</p>
+			<p>I also love running and hiking.</p>
 
 
 		</section>
 		<section class="section" id="web">
 
 			<h1>Web</h1>
-			<p>I've done a few web projects, some for my Thinkful program, some not. Below is a portfolio of my work to date. </p>
+			<p>I've done a few web projects, some for my Thinkful Front-End Web Development course, some not. Below is a portfolio of my work to date. </p>
 			
 
 			<h2><a href="http://www.thinkful.com">Thinkful</a></h2>
 			<div class="sample">
 				<h3>Small Business</h3>
-				<p>Assignment: Lorem Ipsum</p>
+				<p>Assignment: Design a simple small business landing page using HTML and CSS skills learned in the course.</p>
 				<a href="http://mlbdenver.github.io/small-business"><img src="images/small_business.png" /></a>
 			</div>
 			<div class="sample">
 				<h3>Shopping List</h3>
-				<p>Assignment: Lorem Ipsum</p>
+				<p>Assignment: Use interactive jQuery to design an app where new shopping items can be added to and deleted from the grocery list. </p>
 				<a href="http://mlbdenver.github.io/shopping-list"><img src="images/shopping_list.png" /></a>
 			</div>
 			<div class="sample">
 				<h3>Quiz</h3>
-				<p>Assignment: Lorem Ipsum</p>
+				<p>Assignment: Create a quiz app that utilizes JavaScript objects.</p>
 				<a href="http://mlbdenver.github.io/quiz"><img src="images/ice_cream_quiz.png" /></a>
 			</div>
 			<div class="sample">
 				<h3>API Hack</h3>
-				<p>Assignment: Lorem Ipsum</p>
+				<p>Assignment: Build an app that uses JSON to connect with an API to provide an interactive user experience.</p>
 				<a href="http://mlbdenver.github.io/number-trivia"><img src="images/number_trivia.png" /></a>
 			</div>
 			<h2>Other</h2>
+			<div class="sample">
+				<h3>Sunshine Silver Mines</h3>
+				<p>Description: Designed a corporate website for a private company. Built on a Joomla CMS.</p>
+				<a href="http://www.sunshinesilvermines.com"><img src="images/ssmc_web.png" /></a>
+			</div>
+			<div class="sample">
+				<h3>Kamaglo</h3>
+				<p>Description: My first website! Has a few issues (ie slider), but in process of fixing. Built on Joomla CMS.</p>
+				<a href="http://www.kamaglo.net"><img src="images/kamaglo.png" /></a>
+			</div>
+			<div class="sample">
+				<h3>Foster Portal</h3>
+				<p>Description: Development site for potential portal for foster homes of local rescue. Built on Joomla CMS. Work in progress...</p>
+				<a href="http://www.mlbdenver.io/grfrfoster"><img src="images/grfr_foster.png" /></a>
+			</div>
 		</section>
 		<section class="section" id="photos">
 			<h1>Photos</h1>				
 			<p>I also enjoy photography, but I'm definitely a dabbler.  Here are some of my favorite photographic results.</p>
+			<div class="fotorama-wrap">
+				<div class="fotorama" data-width="780" data-height="520" data-nav="thumbs" data-loop="true" data-autoplay="true">
+	  				<a href="https://www.flickr.com/photos/mlbdenver/14453466086" title="DSC00580.jpg by Monica Brisnehan, on Flickr"><img src="https://farm3.staticflickr.com/2916/14453466086_c59965ef8b_z.jpg" alt="DSC00580.jpg"></a>
+	  				<a href="https://www.flickr.com/photos/mlbdenver/14496703583" title="DSC00608.jpg by Monica Brisnehan, on Flickr"><img src="https://farm6.staticflickr.com/5278/14496703583_313102336a_z.jpg" alt="DSC00608.jpg"></a>
+	  				<a href="https://www.flickr.com/photos/mlbdenver/14475265412" title="Wally_Autumn_1.jpg by Monica Brisnehan, on Flickr"><img src="https://farm3.staticflickr.com/2918/14475265412_7eb6e311fc_z.jpg" alt="Wally_Autumn_1.jpg"></a>
+	  				<a href="https://www.flickr.com/photos/mlbdenver/2953538628" title="Kleins by Monica Brisnehan, on Flickr"><img src="https://farm4.staticflickr.com/3034/2953538628_f312d0d21b.jpg"alt="Kleins" data-caption="Elephants | Kleins Camp, Tanzania"></a><a href="https://www.flickr.com/photos/mlbdenver/2967584841" title="Africa1639 by Monica Brisnehan, on Flickr"><img src="https://farm4.staticflickr.com/3284/2967584841_717f994a71.jpg"alt="Africa1639" data-caption="Katavi National Park, Tanzania"></a>  				
+	  				<a href="https://www.flickr.com/photos/mlbdenver/2952731789" title="Kleins by Monica Brisnehan, on Flickr"><img src="https://farm4.staticflickr.com/3226/2952731789_bb362d601c.jpg"alt="Kleins" data-caption="Zebras | Kleins Camp, Tanzania"></a>
+	  				<a href="https://www.flickr.com/photos/mlbdenver/2994607428" title="Africa0853 by Monica Brisnehan, on Flickr"><img src="https://farm4.staticflickr.com/3056/2994607428_4c9a204be8.jpg"
+	  				alt="Africa0853" data-caption="Ngorongoro Crater, Tanzania"></a>
+	  				<a href="https://www.flickr.com/photos/mlbdenver/2952599759" title="Crater by Monica Brisnehan, on Flickr"><img src="https://farm4.staticflickr.com/3036/2952599759_cb54386814_z.jpg" alt="Crater" data-caption="Ngorongoro Crater, Tanzania"></a>
+	  				<a href="https://www.flickr.com/photos/mlbdenver/14476565885" title="IMG_5821-Edit.jpg by Monica Brisnehan, on Flickr"><img src="https://farm4.staticflickr.com/3907/14476565885_62711ec868_z.jpg" alt="IMG_5821-Edit.jpg"></a>
+	  				<a href="https://www.flickr.com/photos/mlbdenver/14476564135" title="IMG_5787.jpg by Monica Brisnehan, on Flickr"><img src="https://farm6.staticflickr.com/5529/14476564135_041196e7a1_z.jpg" alt="IMG_5787.jpg"></a>
 
-			<p>Text</p>
-
-			<p>Text</p>
+  				</div>
+			</div>
 		</section>
 		<section class="section" id="contact">
 			<h1>Contact</h1>
 			<p>Please feel free to contact me at:<br>
-			mlbdenver@gmail.com</p>
+			mlbdenver [at] gmail [dot] com</p>
 		</section>
 	</div>
 	<div id="right">
@@ -92,6 +119,5 @@
 	<div class="clear"></div>
 	<footer class="footer">
 	</footer>
-	
 </body>
 </html>
